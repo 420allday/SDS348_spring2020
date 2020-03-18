@@ -61,7 +61,7 @@ This question would be rendered as follows:
 > ```
 > This is the error I get:
 > 
-> ``` python
+> ```
 > ---------------------------------------------------------------------------
 > TypeError                                 Traceback (most recent call last)
 > <ipython-input-1-9fa35d97d9b9> in <module>
