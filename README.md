@@ -25,4 +25,43 @@ This question would be rendered as follows:
 > x + "2"
 > ```
 > This is the error I get: `Error in x + "2" : non-numeric argument to binary operator`
+
+Questions regarding python work just the same, only that you write `python` after the backticks instead of `r`: 
+
+    I am trying to add 2 to a variable holding the number 1, but I get an error. This is my code:
     
+    ``` python
+    x <- 1
+    x + "2"
+    ```
+    This is the error I get:
+    
+    ``` python
+    ---------------------------------------------------------------------------
+    TypeError                                 Traceback (most recent call last)
+    <ipython-input-1-9fa35d97d9b9> in <module>
+          1 x = 1
+    ----> 2 x + "2"
+    
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    ```
+
+This question would be rendered as follows:
+
+> I am trying to add 2 to a variable holding the number 1, but I get an error. This is my code:
+>
+> ``` python
+> x <- 1
+> x + "2"
+> ```
+> This is the error I get:
+> 
+> ``` python
+> ---------------------------------------------------------------------------
+> TypeError                                 Traceback (most recent call last)
+> <ipython-input-1-9fa35d97d9b9> in <module>
+>       1 x = 1
+> ----> 2 x + "2"
+> 
+> TypeError: unsupported operand type(s) for +: 'int' and 'str'
+> ```
