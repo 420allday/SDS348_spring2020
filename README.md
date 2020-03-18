@@ -70,3 +70,45 @@ This question would be rendered as follows:
 > 
 > TypeError: unsupported operand type(s) for +: 'int' and 'str'
 > ```
+
+## General advice about asking questions
+
+Whenever you are asking questions, it is critical that you provide a **minimal** and **complete** example of your problem. The example needs to be as minimal as possible, and it should remove any code lines that aren't directly relevant. For example, if you are asking a question about making a plot, code lines that make the axes look nicer or pick a different color scale will generally be irrelevant unless your question is specifically about those issue. Remove those lines. A good example of a problem rarely needs more than 5-10 lines of code.
+
+The example also needs to be complete. In other words, I need to be able to copy your code, as is, into a new R or python session and it must run. If the example is not complete we cannot figure out what exactly the problem is. I'll provide an example to help you understand. First a bad version:
+
+> Q: I'm trying to plot the `iris` dataset with ggplot but it doesn't work. Here is what I do:
+> ``` r
+> iris %>%
+>   ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) +
+>   geom_point()
+> ```
+
+I don't know how to answer this question, because the code looks correct. However, I'm missing information. What libraries did the student use? If I copy and paste the code as given above into a new R session, without loading any libraries, it won't run. So this is not a complete example.
+
+The complete example would look like this:
+
+> Q: I'm trying to plot the `iris` dataset with ggplot but it doesn't work. Here is what I do:
+> ``` r
+> library(ggplot2)
+> 
+> iris %>%
+>   ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) +
+>   geom_point()
+> #> Error in iris %>% ggplot(aes(Sepal.Length, Sepal.Width, color = Species)): could not find function "%>%"
+> ```
+
+Note that now the student has provided the library they are using, and also the error message. Now the problem is clear: We cannot use `%>%` unless we have loaded the tidyverse library. With this issue figured out, we can provide an answer:
+
+> A: You need to load the tidyverse library to use `%>%`.
+> ``` r
+> library(tidyverse)
+> 
+> iris %>%
+>   ggplot(aes(Sepal.Length, Sepal.Width, color = Species)) +
+>   geom_point()
+> ```
+> 
+> ![](https://i.imgur.com/rP874U5.png)
+
+Note that GitHub allows us to upload images, and this can be really helpful when a problem arises in a plot. **But please, do not upload images of your code.** We need to be able to copy and paste your code to figure out what the issue is.
