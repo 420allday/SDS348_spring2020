@@ -6,6 +6,8 @@ To participate, you will need a [GitHub account.](https://github.com/) You can s
 
 All discussion will happen in [GitHub issues.](https://github.com/clauswilke/SDS348_spring2020/issues) The most important thing you need to know is that there are two types of issues, [open issues](https://github.com/clauswilke/SDS348_spring2020/issues?q=is%3Aopen+is%3Aissue) and [closed issues](https://github.com/clauswilke/SDS348_spring2020/issues?q=is%3Aissue+is%3Aclosed). Open issues are issues that have not yet been resolved. For example, a student has asked a question but no answer exists yet. Closed issues are issues for which a resolution has been found. For example, the question has been satisfactorily answerd. Be aware that after a while there will be a lot of useful material in closed issues! When you have a specific question, first check whether there is a relevant issue already. If not, click on the green ["New Issue" button](https://github.com/clauswilke/SDS348_spring2020/issues/new) and post your question.
 
+## Asking questions about R
+
 When entering questions or responses on GitHub, you can use Markdown, just like you are used to in RMarkdown. Code blocks are fenced off with three backticks. The only minor change is that the `r` after the backticks is not in curly braces. For example, to ask an R question, you might write the following:
 
     I am trying to add 2 to a variable holding the number 1, but I get an error. This is my code:
@@ -26,7 +28,10 @@ This question would be rendered as follows:
 > ```
 > This is the error I get: `Error in x + "2" : non-numeric argument to binary operator`
 
-Questions regarding python work just the same, only that you write `python` after the backticks instead of `r`: 
+
+## Asking questions about python
+
+Questions regarding python work just the same as questions about R, only that you write `python` after the backticks instead of `r`: 
 
     I am trying to add 2 to a variable holding the number 1, but I get an error. This is my code:
     
