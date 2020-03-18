@@ -98,7 +98,7 @@ The complete example would look like this:
 > #> Error in iris %>% ggplot(aes(Sepal.Length, Sepal.Width, color = Species)): could not find function "%>%"
 > ```
 
-Now the student has provided the library they are using, and also the error message. We now see what the problem: We cannot use `%>%` unless we have loaded the tidyverse library. With this issue figured out, we can provide an answer:
+Now the student has provided the library they are using, and also the error message. We now see what the problem is: We cannot use `%>%` unless we have loaded the tidyverse library. With this issue figured out, we can provide an answer:
 
 > A: You need to load the tidyverse library to use `%>%`.
 > ``` r
