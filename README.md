@@ -41,7 +41,7 @@ Questions regarding python work just the same as questions about R, only that yo
     ```
     This is the error I get:
     
-    ``` python
+    ```
     ---------------------------------------------------------------------------
     TypeError                                 Traceback (most recent call last)
     <ipython-input-1-9fa35d97d9b9> in <module>
