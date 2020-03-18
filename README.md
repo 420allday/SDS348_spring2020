@@ -84,7 +84,7 @@ The example also needs to be complete. In other words, we need to be able to cop
 >   geom_point()
 > ```
 
-We don't know how to answer this question, because the code looks correct. However, we are missing information. What libraries did the student use? If we copy and paste the code as given above into a new R session, without loading any libraries, it won't run. (Try this out!) So this is not a complete example.
+We don't know how to answer this question, because the code looks correct. However, we are missing information. What libraries did the student use? What is the error the student sees? If we copy and paste the code as given above into a new R session, without loading any libraries, it won't run. (Try this out!) So this is not a complete example.
 
 The complete example would look like this:
 
@@ -98,7 +98,7 @@ The complete example would look like this:
 > #> Error in iris %>% ggplot(aes(Sepal.Length, Sepal.Width, color = Species)): could not find function "%>%"
 > ```
 
-Note that now the student has provided the library they are using, and also the error message. Now the problem is clear: We cannot use `%>%` unless we have loaded the tidyverse library. With this issue figured out, we can provide an answer:
+Now the student has provided the library they are using, and also the error message. We now see what the problem: We cannot use `%>%` unless we have loaded the tidyverse library. With this issue figured out, we can provide an answer:
 
 > A: You need to load the tidyverse library to use `%>%`.
 > ``` r
